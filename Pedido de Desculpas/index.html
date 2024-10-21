@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Desculpas</title>
+</head>
+
+<body>
+    <div class="container">
+    <div #id="chorando">
+    <img src="imgs/picmix.com_1776750.gif" alt="" width="240" height="240">
+    </div>
+
+    <div class="box">
+        <p>Me desculpa, Ellenzinha? </p>
+        <div class="buttons-container">
+            <button id="yes">
+                <a href="https://photos.app.goo.gl/gUe6VYshTJWtfRBh8">SIM</a>
+            </button>
+            <button id="no">NÃO</button>
+        </div>
+    </div>
+
+    <div #id="apaixonado"> 
+        <img src="imgs/emoji_apaixonado.jpg" alt="Emoji Apaixonado" width="240" height="240">
+    </div>
+    
+</div>
+</body>
+</html>
+
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+
+    button.addEventListener('mouseover', function () {
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
+</html>
